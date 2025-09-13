@@ -24,11 +24,12 @@ public class ManagerController {
     @GetMapping("/register")
     public void register(){}
 
-    @PostMapping("/register")
-    public String registManager(@ModelAttribute ManagerDTO managerDTO){
-        managerService.registManager(managerDTO);
-        return "redirect:/manager/login";
-    }
+//    @PostMapping("/register")
+//    public String registManager(@ModelAttribute ManagerDTO managerDTO){
+//        System.out.println(managerDTO);
+//        managerService.registManager(managerDTO);
+//        return "redirect:/manager/login";
+//    }
 
 /*    @PostMapping("/login")
     public ModelAndView login(ModelAndView mv,@RequestParam ManagerDTO managerDTO){
